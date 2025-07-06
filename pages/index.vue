@@ -1,23 +1,28 @@
 <template>
-    <div style="padding-top: 4rem; padding-bottom: 2rem;">
-        <div class="maintitle">
-            TW2 projects<br />
-            <span style="font-size: x-small;">TW2 aka The Wingate 2940 aka Chien-Rouge aka RedDog,csa aka Chevalier Suprême de l'Apocalypse</span>
+    <div id="mainpage">
+        <div style="padding-top: 4rem; padding-bottom: 2rem;">
+            <div class="maintitle">
+                TW2 projects<br />
+                <span style="font-size: x-small;">TW2 aka The Wingate 2940 aka Chien-Rouge aka RedDog,csa aka Chevalier Suprême de l'Apocalypse</span>
+            </div>
         </div>
-    </div>
-    <div>    
-        <div v-for="project in projects">
-            <TProject :project="project" :key="project._id" />
+        <div>    
+            <div v-for="project in projects">
+                <TProject :project="project" :key="project._id" />
+            </div>
         </div>
-    </div>
-    <div style="padding-top: 2rem; padding-bottom: 4rem;">
-        <div class="maintitle">
-            <NuxtLink to="https://github.com/TW2">TW2 GitHub page</NuxtLink>
+        <div style="padding-top: 2rem; padding-bottom: 4rem;">
+            <div class="maintitle">
+                <NuxtLink to="https://github.com/TW2">TW2 GitHub page</NuxtLink>
+            </div>
         </div>
-    </div>
+    </div>    
 </template>
 
 <style lang="css">
+#mainpage {
+    overflow-y: auto;
+}
 .maintitle {
     width: 100%;
     text-align: center;
