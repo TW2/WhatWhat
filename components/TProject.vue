@@ -21,7 +21,7 @@ const { project } = props;
                         <br />
                         <span>{{ project.desc }}</span>
                         <br /><br />
-                        <nuxt-link :to="project.details" class="see">See</nuxt-link>
+                        <nuxt-link :to="`/WhatWhat/${project.details}`" class="see">See</nuxt-link>
                     </td>
                 </tr>
                 <tr>
@@ -51,7 +51,7 @@ const { project } = props;
                         <br />
                         <span style="position: relative; left: 14px;">{{ project.desc }}</span>
                         <br /><br />
-                        <nuxt-link :to="project.details" class="see" style="position: relative; left: 14px;">See</nuxt-link>
+                        <nuxt-link :to="`/WhatWhat/${project.details}`" class="see" style="position: relative; left: 14px;">See</nuxt-link>
                     </td>
                 </tr>
                 
@@ -82,7 +82,7 @@ const { project } = props;
                         <br />
                         <span>{{ project.desc }}</span>
                         <br /><br />
-                        <nuxt-link :to="project.details" class="see">See</nuxt-link>
+                        <nuxt-link :to="`/WhatWhat/${project.details}`" class="see">See</nuxt-link>
                     </td>
                 </tr>
                 
@@ -113,7 +113,7 @@ const { project } = props;
                         <br />
                         <span>{{ project.desc }}</span>
                         <br /><br />
-                        <nuxt-link :to="project.details" class="see">See</nuxt-link>
+                        <nuxt-link :to="`/WhatWhat/${project.details}`" class="see">See</nuxt-link>
                     </td>
                 </tr>
 
